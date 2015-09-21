@@ -20,6 +20,8 @@ public class CounterActivity extends AppCompatActivity {
      private Button mAddButton;                   // button variable
      private Button mSubtractButton;
 
+    private  TextView mTextView;
+
       private  Integer counterInteger = 0;          // counter variable
 
     @Override
@@ -70,9 +72,16 @@ public class CounterActivity extends AppCompatActivity {
     //                      and assign to txtValue.
     //                              Then... set the text Value variable to a string casted counterInteger
     private  void  CastNDisplay()
-    {
+    {                                       // ALL OF THESE CAST AND DISPLAY.... PLAY WITH THESE!  PICK 1!!
+    //     String theText = mTextView.getText().toString();
+    //     int theValue = Integer.parseInt(theText);    //( a string... cast to an array so tostring send )
+
+    //      String theResult = Integer.toString(counterInteger);
+    //      mTextView.setText(theResult);
+
         TextView displayTextValue =  (TextView)findViewById(R.id.counter_text);
         displayTextValue.setText(Integer.toString(counterInteger));
+        //displayTextValue.setText(counterInteger+"");
     }
 
     //   Function that occurs at start of the program execution
